@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title>Charity Miner</title>
+    <script src="popup.js"></script>
+    <script src="background.js"></script>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+</head>
+<body>
+<h1 style="font-size:24px;">Mine For Puerto Rico</h1>
+<label class="switch">
+    <input type="checkbox">
+    <span class="toggle round"></span>
+</label>
+<div id="activeText" style="display:none;">Active</div>
+<div id="disabledText">Disabled</div>
+
+<div class="panel">
+    <div id="slider"></div>
+    <p>
+        Processing Power : <span id="throttle">20</span>%
+    </p>
+</div>
+<img src="united_pr.png">
+</body>
+</html>

